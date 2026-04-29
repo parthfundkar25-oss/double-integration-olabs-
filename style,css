@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg,#1e1e2f,#2c2c54);
+    color: white;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.section { display: none; }
+.active { display: block; }
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background: #00c9a7;
+    border: none;
+}
