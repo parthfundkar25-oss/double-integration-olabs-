@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Double Integration Virtual Lab</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>Virtual Lab</h2>
+    <a onclick="show('home')">Home</a>
+    <a onclick="show('aim')">Aim</a>
+    <a onclick="show('theory')">Theory</a>
+    <a onclick="show('pretest')">Pre-Test</a>
+    <a onclick="show('sim')">Simulation</a>
+    <a onclick="show('posttest')">Post-Test</a>
+    <a onclick="show('ref')">References</a>
+    <a onclick="show('contrib')">Contributors</a>
+    <a onclick="show('feedback')">Feedback</a>
+</div>
+
+<div class="content">
+
+<div id="home" class="section active">
+    <h1>Double Integration Virtual Lab</h1>
+    <p>Interactive learning platform for double integrals</p>
+</div>
+
+<div id="aim" class="section">
+    <h2>Aim</h2>
+    <p>Understand and evaluate double integrals graphically and numerically.</p>
+</div>
+
+<div id="theory" class="section">
+    <h2>Theory</h2>
+    <p>Double integrals calculate volume under surfaces.</p>
+</div>
+
+<div id="pretest" class="section">
+    <h2>Pre-Test</h2>
+    <div id="preQ"></div>
+    <button onclick="submitPre()">Submit</button>
+</div>
+
+<div id="sim" class="section">
+    <h2>Simulation</h2>
+
+    f(x,y): <input id="func" value="x*y"><br>
+    y: <input id="y1" value="0"> to <input id="y2" value="x"><br>
+    x: <input id="x1" value="0"> to <input id="x2" value="2"><br>
+
+    <button onclick="solve()">Solve</button>
+
+    <div id="output"></div>
+    <div id="graph"></div>
+</div>
+
+<div id="posttest" class="section">
+    <h2>Post-Test</h2>
+    <div id="postQ"></div>
+    <button onclick="submitPost()">Submit</button>
+</div>
+
+<div id="ref" class="section">
+    <h2>References</h2>
+    <p>Thomas Calculus, MIT OCW</p>
+</div>
+
+<div id="contrib" class="section">
+    <h2>Contributors</h2>
+    <p>Your Name</p>
+</div>
+
+<div id="feedback" class="section">
+    <h2>Feedback</h2>
+    <textarea id="fb"></textarea><br>
+    <button onclick="saveFeedback()">Submit</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
